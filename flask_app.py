@@ -8,7 +8,7 @@ from flasgger import Swagger
 app=Flask(__name__)
 Swagger(app)
 
-pickle_in = open("bank_authentication_model.pkl","rb")
+pickle_in = open("model_update.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 @app.route('/')
